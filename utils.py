@@ -41,7 +41,7 @@ def create_input_files(dataset, karpathy_json_path, image_folder, captions_per_i
 
     for img in data['images']:
         captions = []
-        for c in img['sentences']:
+        for c in img['sentence_hindi']:
             # Update word frequency
             word_freq.update(c['tokens'])
             if len(c['tokens']) <= max_len:
